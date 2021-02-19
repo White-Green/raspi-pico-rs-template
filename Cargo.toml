@@ -1,0 +1,14 @@
+[package]
+name = "raspi_pico_rs_template"
+version = "0.1.0"
+authors = ["White-Green <43771790+White-Green@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+raspi_pico_sdk = { git = "https://github.com/White-Green/raspi-pico-sdk-rs", branch = "main" }
+cortex-m-rt = "0.6.13"
