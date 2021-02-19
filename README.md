@@ -9,7 +9,6 @@ This is a template to write a program for Raspberry Pi Pico by Rust.
 
 At first, Create a repository from this template and clone it to a local machine. (or download this repository)
 
-2: 
 ```bash
 $ cd /path/to/cloned/directory
 $ mkdir build
