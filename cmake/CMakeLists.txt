@@ -33,6 +33,15 @@ add_custom_target(cargo ALL
         cargo build --target thumbv6m-none-eabi ${CARGO_BUILD_ARGS}
         WORKING_DIRECTORY ..)
 
+add_custom_target(doc
+        COMMAND ${CMAKE_COMMAND}
+        -E env
+        "PICO_SDK_RS_C_BINDING_ALTERNATIVES=${ENTRY_ABSOLUTE}"
+        "PICO_SDK_RS_CUSTOM_ENTRY_POINT=${ENTRY_ABSOLUTE}"
+        "PICO_SDK_PATH=${PICO_SDK_PATH}"
+        cargo doc --target thumbv6m-none-eabi ${CARGO_BUILD_ARGS}
+        WORKING_DIRECTORY ..)
+
 add_executable(${RESULT_FILE_NAME} entry.c)
 add_dependencies(${RESULT_FILE_NAME} cargo)
 get_filename_component(LIB_ABSOLUTE ../target/thumbv6m-none-eabi/${LIBRARY_DIRECTORY}/lib${LIB_NAME}.a ABSOLUTE)

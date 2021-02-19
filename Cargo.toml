@@ -11,4 +11,3 @@ crate-type = ["staticlib"]
 
 [dependencies]
 raspi_pico_sdk = { git = "https://github.com/White-Green/raspi-pico-sdk-rs", branch = "main" }
-cortex-m-rt = "0.6.13"
