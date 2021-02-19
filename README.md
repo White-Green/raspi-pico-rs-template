@@ -26,6 +26,12 @@ The entry-point(main function) is in `src/lib.rs`.
 Run `make doc` and visit `target/thumbv6m-none-eabi/doc` to see a list of functions that can be used.
 
 # Advanced Topics
+## 別でダウンロードしてあるSDKを利用する方法
+既にダウンロードしてあるSDKを利用する場合、環境変数 `PICO_SDK_PATH` にパスを設定してください。
+
+## How to use the SDK that downloaded to another directory
+Set path in environment variable `PICO_SDK_PATH` to use SDK that in another directory.
+
 ## 出力物の名前を変える方法
 出力の `pico.uf2` を `hoge.uf2` に変えたい場合、 `cmake/CMakeLists.txt` の `set(RESULT_FILE_NAME pico)` を`set(RESULT_FILE_NAME hoge)` に変更します。
 
