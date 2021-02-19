@@ -5,11 +5,11 @@ Raspberry Pi Pico向けのプログラムをRustで作るためのテンプレ�
 This is a template to write a program for Raspberry Pi Pico by Rust.
 
 # Getting Started
-1. このテンプレートリポジトリから新たにリポジトリを作ってcloneします(またはこのリポジトリをダウンロード)
+まず、このテンプレートリポジトリから新たにリポジトリを作ってcloneします(またはこのリポジトリをダウンロード)
 
+At first, Create a repository from this template and clone it to a local machine. (or download this repository)
 
-1. Create repository from this template and clone to local machine.(or download this repository)
-2. 
+2: 
 ```bash
 $ cd /path/to/cloned/directory
 $ mkdir build
